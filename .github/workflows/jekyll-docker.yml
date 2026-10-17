@@ -8,4 +8,4 @@ jobs:
      runs-on: ubuntu-latest
      steps:
        - name: to check date
-         run: echo "today date is ${date}"
+         run: echo "today date is ${{github.event_name}}"
