@@ -1,0 +1,11 @@
+name: check docker 
+on:
+  push:
+  workflow_dispatch:
+  pull_request:
+jobs:
+  job1:
+    runs-on: ubuntu-latest
+    steps:
+      - name: check docker version
+        run: sh " docker --version "
