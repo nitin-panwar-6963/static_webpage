@@ -8,4 +8,4 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: check docker version
-        run: sh " docker --version "
+        run: docker --version
