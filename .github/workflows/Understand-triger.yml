@@ -1,0 +1,16 @@
+name: understand the trigers
+on:
+  push:
+  workflow_dispatch:
+  pull_request:
+
+jobs:
+  job1:
+    runs-on: ubuntu-latest
+    steps:
+      - name: identify the triger type
+        run: echo "trigerr type is ${{github.event_name}}"
+
+      - name: identify the trigers path
+        run: echo "path f trigerr ${{github.path}}"
+   
